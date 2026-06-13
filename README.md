@@ -1,73 +1,220 @@
-# React + TypeScript + Vite
+# 🚀 Swapnil Kadam Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated developer portfolio built with **React** and **TypeScript**. This portfolio showcases skills, projects, education, certifications, and contact information with a premium UI inspired by modern SaaS and developer websites.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🎨 Modern Glassmorphism UI
+* ⚡ Animated Hero Section with Typing Effect
+* 🌌 Interactive Particle Background
+* 📊 Animated Skill Progress Bars
+* 📈 Counter Statistics Section
+* 💼 Featured Projects Showcase
+* 🎓 Education & Certifications
+* 📱 Fully Responsive Design
+* 🌙 Dark Theme Interface
+* 🔗 Social Media Integration
+* 📄 Resume Download Button
+* 📬 Contact Form UI
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React.js
+* TypeScript
+* HTML5
+* CSS3
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### UI & Animations
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Custom CSS Animations
+* Intersection Observer API
+* Canvas API
+* Responsive Design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── App.tsx
+├── Components
+├── Hooks
+├── Assets
+└── Styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📌 Featured Projects
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Code Share Platform
+
+Real-time collaborative coding platform supporting multiple users simultaneously.
+
+**Tech Stack**
+
+* MERN Stack
+* Apache Kafka
+* Redis
+* Docker
+* WebSockets
+
+### 2. Distributed ERP System
+
+Enterprise-scale ERP application using Microservices Architecture.
+
+**Tech Stack**
+
+* Java
+* Spring Boot
+* Spring Cloud
+* PostgreSQL
+* AWS
+* Kafka
+
+### 3. Cloud-Native File Storage
+
+Scalable cloud storage solution with chunk-based upload processing.
+
+**Tech Stack**
+
+* Spring Boot
+* PostgreSQL
+* Redis
+* Kafka
+* Docker
+* Kubernetes
+
+---
+
+## 🧑‍💻 Skills
+
+### Languages
+
+* Java
+* JavaScript
+* TypeScript
+* Python
+* SQL
+
+### Frontend
+
+* React.js
+* HTML5
+* CSS3
+* Responsive Design
+
+### Backend
+
+* Spring Boot
+* Node.js
+* Express.js
+* REST APIs
+
+### Cloud & DevOps
+
+* AWS
+* Docker
+* Kubernetes
+* CI/CD
+
+### Databases
+
+* PostgreSQL
+* MongoDB
+* MySQL
+* Redis
+
+### Architecture
+
+* Microservices
+* System Design
+* Event-Driven Architecture
+* Data Structures & Algorithms
+
+---
+
+## 🎓 Education
+
+### Master of Computer Applications (MCA)
+
+Pimpri Chinchwad University
+
+CGPA: 8.25
+
+### Bachelor of Computer Science (BCS)
+
+M.S.G College
+
+CGPA: 8.3
+
+---
+
+## 📜 Certifications
+
+* AWS Certification
+* Generative AI Certification
+* Spring Boot Certification
+* DSA & Java Certification
+
+---
+
+## 📞 Contact
+
+**Email:** [swapnilk.kadam01@gmail.com](mailto:swapnilk.kadam01@gmail.com)
+
+**LinkedIn:** https://linkedin.com/in/swapnil-kadam
+
+**GitHub:** https://github.com/swapnilk1806
+
+**LeetCode:** https://leetcode.com/u/swapnilk1806
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+
+cd portfolio
+
+npm install
+
+npm run dev
 ```
+
+---
+
+## 🏗️ Build For Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+### Swapnil Kadam
+
+Software Engineer | Java Developer | Spring Boot Engineer | MERN Stack Developer
+
+Passionate about building scalable applications, distributed systems, cloud-native architectures, and solving complex problems through software engineering.
