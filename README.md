@@ -1,4 +1,4 @@
-# 🚀 Swapnil Kadam Portfolio
+# 🚀 Swapnil Kadam Portfolio 🚀
 
 A modern, responsive, and animated developer portfolio built with **React** and **TypeScript**. This portfolio showcases skills, projects, education, certifications, and contact information with a premium UI inspired by modern SaaS and developer websites.
 
