@@ -11,7 +11,7 @@ interface Particle {
   opacity: number;
 }
 
-// ─── Global Styles (injected once) ────────────────────────────────────────────
+// ─── Global Styles (injected once) – exactly as before ────────────────────────
 const GLOBAL_STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap');
 
@@ -764,54 +764,131 @@ const SKILLS_DATA = [
   },
 ];
 
-const PROJECTS = [
+// ─── 3 MAJOR PROJECTS (with GitHub links updated) ────────────────────────────
+const MAJOR_PROJECTS = [
   {
     num: "01",
     name: "Code Share Platform",
-    desc:
-      "Real-time collaborative code-sharing platform enabling multiple developers to write and edit code simultaneously. Built with event-driven architecture for sub-millisecond synchronization.",
+    desc: "Real-time collaborative code-sharing platform enabling multiple developers to write and edit code simultaneously. Built with event-driven architecture for sub-millisecond synchronization.",
     tech: ["MERN Stack", "Apache Kafka", "Redis", "Docker", "WebSockets"],
-    features: [
-      "Real-time Collaboration",
-      "Live Editing",
-      "Kafka Streaming",
-      "Redis Caching",
-      "RBAC Auth",
-      "Docker Deploy",
-    ],
-    github: "https://github.com/swapnilk1806/Code-sharing-platform",
+    features: ["Real-time Collaboration", "Live Editing", "Kafka Streaming", "Redis Caching", "RBAC Auth", "Docker Deploy"],
+    github: "https://github.com/swapnilk1806/Code-sharing-platform", // (Not provided in list, keeping as is)
   },
   {
     num: "02",
     name: "Distributed ERP System",
-    desc:
-      "Enterprise-scale distributed ERP platform managing HR, Finance, Inventory, Procurement, and Operations modules with fault isolation and centralized API Gateway.",
+    desc: "Enterprise-scale distributed ERP platform managing HR, Finance, Inventory, Procurement, and Operations modules with fault isolation and centralized API Gateway.",
     tech: ["Java", "Spring Boot", "Spring Cloud", "Kafka", "Redis", "PostgreSQL", "AWS"],
-    features: [
-      "Microservices",
-      "JWT Security",
-      "API Gateway",
-      "Service Discovery",
-      "Redis Caching",
-      "AWS Deploy",
-    ],
-    github: "https://github.com/swapnilk1806/Distributed-Enterprise-Resource-Planning",
+    features: ["Microservices", "JWT Security", "API Gateway", "Service Discovery", "Redis Caching", "AWS Deploy"],
+    github: "https://github.com/swapnilk1806/Distributed-Enterprise-Resource-Planning", // (Not provided, keeping)
   },
   {
     num: "03",
     name: "Cloud-Native File Storage",
-    desc:
-      "Cloud-native large file storage platform with chunk-based upload architecture. Optimized PostgreSQL indexing and async processing for high throughput with Kubernetes auto-scaling.",
+    desc: "Cloud-native large file storage platform with chunk-based upload architecture. Optimized PostgreSQL indexing and async processing for high throughput with Kubernetes auto-scaling.",
     tech: ["Spring Boot", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes"],
-    features: [
-      "Chunk Processing",
-      "K8s Auto-Scaling",
-      "Kafka Processing",
-      "Redis Caching",
-      "High Availability",
-      "Monitoring",
-    ],
+    features: ["Chunk Processing", "K8s Auto-Scaling", "Kafka Processing", "Redis Caching", "High Availability", "Monitoring"],
     github: "https://github.com/swapnilk1806/Cloud-Native-Large-File-Storage",
+  },
+];
+
+// ─── 12 ACADEMIC PROJECTS (with GitHub links updated) ───────────────────────
+const ACADEMIC_PROJECTS = [
+  {
+    num: "01",
+    name: "Bus Charging Scheduler",
+    desc: "Python + Streamlit application that schedules charging operations for electric buses traveling between Bengaluru and Kochi.",
+    tech: ["Python", "Streamlit", "Pandas", "Optimization"],
+    features: ["Route-based charging schedules", "Real-time bus tracking", "Energy consumption prediction", "Interactive dashboard", "CSV export"],
+    github: "https://github.com/swapnilk1806/Bus-Charging-Scheduler",
+  },
+  {
+    num: "02",
+    name: "HEALOSBENCH – Medical LLM Evaluation Harness",
+    desc: "Production-ready evaluation system to rigorously assess LLM performance on structured clinical data extraction. Converts doctor-patient transcripts into standardized JSON with per‑field metrics.",
+    tech: ["TypeScript", "Next.js", "Hono", "PostgreSQL", "Anthropic SDK"],
+    features: ["Per‑field F1, precision, recall", "Zero-shot / few-shot / CoT", "Real‑time dashboard", "Hallucination detection", "Resumable runs & caching", "< $1 per evaluation"],
+    github: "https://github.com/swapnilk1806/Medical-llm-eval-harness",
+  },
+  {
+    num: "03",
+    name: "Laptop Price Predictor",
+    desc: "Machine learning model that predicts laptop prices based on specifications like RAM, storage, processor, brand, and display.",
+    tech: ["Python", "Scikit-learn", "Pandas", "Flask", "Regression"],
+    features: ["Feature engineering", "Multiple ML models", "Price range classification", "Interactive web interface", "Model comparison"],
+    github: "https://github.com/swapnilk1806/laptop-price-prediction-with-AI",
+  },
+  {
+    num: "04",
+    name: "Loan Prediction System",
+    desc: "End‑to‑end system that predicts loan approval probability using applicant data (income, credit history, loan amount, etc.).",
+    tech: ["Python", "Scikit-learn", "XGBoost", "Flask", "Pandas"],
+    features: ["Data preprocessing", "SMOTE for imbalance", "Hyperparameter tuning", "REST API", "Dashboard with insights"],
+    github: "https://github.com/swapnilk1806/loan-prediction-system",
+  },
+  {
+    num: "05",
+    name: "Exam Paper Checker",
+    desc: "AI‑powered tool that automatically grades answer sheets using natural language processing. Supports both descriptive and objective questions.",
+    tech: ["Python", "NLP", "Transformers", "Flask", "PDF parsing"],
+    features: ["Keyword & semantic matching", "Automated score calculation", "Feedback generation", "Bulk processing", "Export results to CSV"],
+    github: "https://github.com/swapnilk1806/Exam-paper-checker",
+  },
+  {
+    num: "06",
+    name: "AI Email Classification System",
+    desc: "Flask + Gmail API + Google Gemini AI system that automatically fetches, categorizes, and processes support emails, reducing manual triage effort.",
+    tech: ["Python", "Flask", "Google Gemini AI", "Gmail API", "OAuth"],
+    features: ["Auto‑fetch unread emails", "Multi‑label classification", "CSV export", "Real‑time dashboard", "Low token cost"],
+    github: "https://github.com/swapnilk1806/Al-Email",
+  },
+  {
+    num: "07",
+    name: "Online Library System",
+    desc: "Full‑stack library management system with role‑based access for students and admins. Browse, borrow, and return books online.",
+    tech: ["Node.js", "Express.js", "Handlebars (HBS)", "MongoDB", "JWT"],
+    features: ["User authentication", "Book search & filters", "Borrow/return tracking", "Admin book management", "Due date reminders"],
+    github: "https://github.com/swapnilk1806/Online-Library-System",
+  },
+  {
+    num: "08",
+    name: "Health Portal",
+    desc: "Healthcare web portal for managing doctor appointments, patient sessions, and medical records.",
+    tech: ["Node.js", "Express", "Handlebars", "PostgreSQL", "Bootstrap"],
+    features: ["Doctor/patient dashboards", "Appointment scheduling", "Medical history storage", "Prescription management", "Responsive design"],
+    github: "#", // URL not provided for Health Portal
+  },
+  {
+    num: "09",
+    name: "Medical Chatbot",
+    desc: "AI‑powered chatbot that provides accurate, informative responses to medical queries using natural language understanding and clinical knowledge bases.",
+    tech: ["Python", "LangChain", "Flask", "LLaMA2", "Pinecone"],
+    features: ["Symptom checker", "Medicine information", "Health tips", "Conversation memory", "Trustworthy sources"],
+    github: "https://github.com/swapnilk1806/Medical_ChatBot",
+  },
+  {
+    num: "10",
+    name: "MCQ Generator",
+    desc: "Dynamic web app using OpenAI LLM and Streamlit to automatically generate high‑quality multiple‑choice questions from any text or topic. Hosted on AWS EC2.",
+    tech: ["Python", "Streamlit", "OpenAI API", "AWS EC2", "Prompt Engineering"],
+    features: ["Context‑aware MCQs", "Difficulty control", "Export to PDF/CSV", "Batch generation", "Ubuntu server deployment"],
+    github: "#", // URL not provided for MCQ Generator
+  },
+  {
+    num: "11",
+    name: "Travel Management System",
+    desc: "User‑friendly web application to plan and organize travel itineraries – create trip plans, manage daily schedules, explore destinations.",
+    tech: ["HTML5", "CSS3", "JavaScript", "LocalStorage", "Responsive UI"],
+    features: ["Itinerary builder", "Destination explorer", "Budget calculator", "Packing checklist", "Mobile‑friendly"],
+    github: "#", // URL not provided for Travel Management System
+  },
+  {
+    num: "12",
+    name: "Spotify Clone Frontend",
+    desc: "Immersive music streaming UI that mimics Spotify's look and feel – browse, search, and play music via integration with Spotify's Web API.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Spotify Web API", "Responsive UI"],
+    features: ["User login via Spotify", "Playlist browsing", "Track search & player", "Responsive layout", "Now playing bar"],
+    github: "https://github.com/swapnilk1806/spotify-clone",
   },
 ];
 
@@ -822,7 +899,7 @@ const CERTS = [
   { icon: "🧩", name: "DSA & Java Certification" },
 ];
 
-// ─── Hooks ────────────────────────────────────────────────────────────────────
+// ─── Hooks ───────────────────────────────────────────────────────────────────
 function useTypingAnimation(texts: string[], speed = 70, pause = 1800) {
   const [displayText, setDisplayText] = useState("");
   const [textIdx, setTextIdx] = useState(0);
@@ -936,7 +1013,6 @@ function ParticleCanvas() {
         ctx.fill();
       });
 
-      // Draw connections
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -967,10 +1043,7 @@ function SkillBar({ name, level, visible }: { name: string; level: number; visib
     <div className="skill-row">
       <span className="skill-name">{name}</span>
       <div className="skill-bar-bg">
-        <div
-          className="skill-bar-fill"
-          style={{ width: visible ? `${level}%` : "0%" }}
-        />
+        <div className="skill-bar-fill" style={{ width: visible ? `${level}%` : "0%" }} />
       </div>
     </div>
   );
@@ -1014,63 +1087,35 @@ function SkillCard({ title, items }: { title: string; items: { name: string; lev
   return (
     <div className="skill-card reveal" ref={ref}>
       <div className="skill-card-title">{title}</div>
-      {items.map((s) => (
-        <SkillBar key={s.name} name={s.name} level={s.level} visible={visible} />
-      ))}
+      {items.map((s) => (<SkillBar key={s.name} name={s.name} level={s.level} visible={visible} />))}
     </div>
   );
 }
 
-// ─── Project Card ─────────────────────────────────────────────────────────────
-function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
+// ─── Project Card (reusable for both major and academic) ──────────────────────
+function ProjectCard({ project, type = "major" }: { project: any; type?: "major" | "academic" }) {
+  // Type can be used for styling differences, but we'll keep same look
   return (
     <div className="project-card reveal">
       <div className="project-banner" />
       <div className="project-body">
-        <div className="project-num">PROJECT {project.num}</div>
+        <div className="project-num">{type === "major" ? "MAJOR" : "ACADEMIC"} {project.num}</div>
         <div className="project-name">{project.name}</div>
         <p className="project-desc">{project.desc}</p>
-
         <div className="project-tech">
-          {project.tech.map((t) => (
-            <span className="tag" key={t}>{t}</span>
-          ))}
+          {project.tech.map((t: string) => (<span className="tag" key={t}>{t}</span>))}
         </div>
-
-        <div
-          style={{
-            fontSize: 12,
-            fontFamily: "var(--font-mono)",
-            color: "var(--muted)",
-            marginBottom: 10,
-            letterSpacing: 1,
-            textTransform: "uppercase",
-          }}
-        >
-          Key Features
-        </div>
+        <div style={{ fontSize: 12, fontFamily: "var(--font-mono)", color: "var(--muted)", marginBottom: 10, letterSpacing: 1, textTransform: "uppercase" }}>Key Features</div>
         <div className="project-features" style={{ marginBottom: 24 }}>
-          {project.features.map((f) => (
-            <span className="tag tag-purple" key={f}>{f}</span>
-          ))}
+          {project.features.map((f: string) => (<span className="tag tag-purple" key={f}>{f}</span>))}
         </div>
-
         <div className="project-actions">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-ghost"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-            </svg>
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
             View Code
           </a>
           <a href="#" className="btn btn-ghost" onClick={(e) => e.preventDefault()}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-            </svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
             Live Demo
           </a>
         </div>
@@ -1081,7 +1126,6 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
 
 // ─── Main App ─────────────────────────────────────────────────────────────────
 export default function App() {
-  // Inject styles
   useEffect(() => {
     const style = document.createElement("style");
     style.textContent = GLOBAL_STYLES;
@@ -1093,367 +1137,160 @@ export default function App() {
   const typing = useTypingAnimation(TYPING_TEXTS);
   useScrollReveal();
 
-  const navLinks = ["About", "Skills", "Projects", "Education", "Contact"];
+  const navLinks = ["About", "Skills", "Projects", "Academic", "Education", "Contact"];
 
   return (
     <>
       <ParticleCanvas />
 
-      {/* ── Navigation ──────────────────────────────────── */}
+      {/* Navigation */}
       <nav>
         <div className="nav-logo">SK</div>
         <ul className="nav-links">
-          {navLinks.map((l) => (
-            <li key={l}>
-              <a href={`#${l.toLowerCase()}`}>{l}</a>
-            </li>
-          ))}
+          {navLinks.map((l) => (<li key={l}><a href={`#${l.toLowerCase()}`}>{l}</a></li>))}
         </ul>
-        <a
-          href="mailto:swapnilk.kadam01@gmail.com"
-          className="btn btn-primary"
-          style={{ fontSize: 12, padding: "8px 18px" }}
-        >
-          Hire Me
-        </a>
+        <a href="mailto:swapnilk.kadam01@gmail.com" className="btn btn-primary" style={{ fontSize: 12, padding: "8px 18px" }}>Hire Me</a>
       </nav>
 
-      {/* ── Hero ────────────────────────────────────────── */}
+      {/* Hero */}
       <div className="hero" id="about">
-        <div className="hero-bg" />
-        <div className="hero-grid" />
+        <div className="hero-bg" /><div className="hero-grid" />
         <div className="hero-content">
-          <div className="hero-badge">
-            Available for opportunities
-          </div>
+          <div className="hero-badge">Available for opportunities</div>
           <h1 className="hero-name">Swapnil<br />Kadam</h1>
           <div className="hero-role">SOFTWARE ENGINEER &nbsp;/&nbsp; MCA STUDENT</div>
-          <div className="hero-typing">
-            {typing}
-            <span className="cursor" />
-          </div>
-          <p className="hero-desc">
-            Building enterprise-scale distributed systems and cloud-native applications.
-            Skilled in Java, Spring Boot, MERN Stack, AWS, Docker, Kubernetes, and Apache Kafka.
-            Solved 650+ coding problems on LeetCode.
-          </p>
+          <div className="hero-typing">{typing}<span className="cursor" /></div>
+          <p className="hero-desc">Building enterprise-scale distributed systems and cloud-native applications. Skilled in Java, Spring Boot, MERN Stack, AWS, Docker, Kubernetes, and Apache Kafka. Solved 650+ coding problems on LeetCode.</p>
           <div className="hero-ctas">
             <a href="#projects" className="btn btn-primary">View Projects</a>
-            <a
-              href="https://github.com/swapnilk1806/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/swapnil-kadam/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-              LinkedIn
-            </a>
-            <a
-              href="https://leetcode.com/u/swapnilk1806/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
-              </svg>
-              LeetCode
-            </a>
-            <a href="https://drive.google.com/file/d/1pNkv9CWd3bZAOMT_DfDHzbjluHLoJn8j/view" target="_blank" rel="noopener noreferrer" className="btn btn-purple">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
-              </svg>
-              Resume
-            </a>
+            <a href="https://github.com/swapnilk1806/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>GitHub</a>
+            <a href="https://www.linkedin.com/in/swapnil-kadam/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>LinkedIn</a>
+            <a href="https://leetcode.com/u/swapnilk1806/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" /></svg>LeetCode</a>
+            <a href="https://drive.google.com/file/d/1pNkv9CWd3bZAOMT_DfDHzbjluHLoJn8j/view" target="_blank" rel="noopener noreferrer" className="btn btn-purple"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" /></svg>Resume</a>
           </div>
         </div>
       </div>
 
-      {/* ── Stats ───────────────────────────────────────── */}
-      <div
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          padding: "0 40px",
-          borderTop: "1px solid var(--border)",
-          borderBottom: "1px solid var(--border)",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
+      {/* Stats – updated to 15+ Projects */}
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 40px", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
+        <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
           <StatItem num={650} suffix="+" label="Problems Solved" />
-          <StatItem num={3} label="Projects Built" />
-          <StatItem num={15} suffix="+" label="Technologies" />
+          <StatItem num={15} suffix="+" label="Projects Built" />
+          <StatItem num={20} suffix="+" label="Technologies" />
           <StatItem num={8} suffix=".25" label="MCA CGPA" />
         </div>
       </div>
 
-      {/* ── Skills ──────────────────────────────────────── */}
+      {/* Skills section – unchanged */}
       <section id="skills">
         <div className="section-label">Expertise</div>
         <h2 className="section-title">Technical Skills</h2>
-        <p className="section-subtitle">
-          Full-stack proficiency across languages, frameworks, cloud platforms, and system design.
-        </p>
-        <div className="skills-grid">
-          {SKILLS_DATA.map((cat) => (
-            <SkillCard key={cat.title} title={cat.title} items={cat.items} />
-          ))}
-        </div>
-
-        {/* Tech badge cloud */}
-        <div
-          style={{
-            marginTop: 48,
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 10,
-            justifyContent: "center",
-          }}
-        >
-          {[
-            "Java", "Spring Boot", "React.js", "Node.js", "TypeScript",
-            "Apache Kafka", "Redis", "PostgreSQL", "MongoDB", "AWS",
-            "Docker", "Kubernetes", "Microservices", "REST APIs", "System Design",
-            "CI/CD", "Git", "WebSockets", "JWT", "Hibernate",
-          ].map((tech) => (
-            <span key={tech} className="tag tag-amber">{tech}</span>
-          ))}
+        <p className="section-subtitle">Full-stack proficiency across languages, frameworks, cloud platforms, and system design.</p>
+        <div className="skills-grid">{SKILLS_DATA.map((cat) => (<SkillCard key={cat.title} title={cat.title} items={cat.items} />))}</div>
+        <div style={{ marginTop: 48, display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+          {["Java","Spring Boot","React.js","Node.js","TypeScript","Python","Streamlit","LLM","FastAPI","PostgreSQL","MongoDB","AWS","Docker","Kubernetes","Microservices","REST APIs","System Design","CI/CD","Git","WebSockets","JWT","Hibernate","React Native"].map((tech) => (<span key={tech} className="tag tag-amber">{tech}</span>))}
         </div>
       </section>
 
-      {/* ── Projects ────────────────────────────────────── */}
+      {/* Major Projects Section */}
       <section id="projects">
         <div className="section-label">Work</div>
-        <h2 className="section-title">Featured Projects</h2>
-        <p className="section-subtitle">
-          Enterprise-scale distributed systems and cloud-native applications.
-        </p>
-        <div className="projects-grid">
-          {PROJECTS.map((p) => (
-            <ProjectCard key={p.num} project={p} />
-          ))}
+        <h2 className="section-title">Major Projects</h2>
+        <p className="section-subtitle">Enterprise-scale distributed systems and cloud-native applications.</p>
+        <div className="projects-grid">{MAJOR_PROJECTS.map((p) => (<ProjectCard key={p.num} project={p} type="major" />))}</div>
+      </section>
+
+      {/* Highlighted Block – RouteMaster AI (React Native) */}
+      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "60px 40px", position: "relative" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0,212,255,0.08), transparent)", pointerEvents: "none" }} />
+        <div className="section-label" style={{ justifyContent: "space-between" }}>
+          <span>📱 Mobile Innovation</span>
+          <span className="tag" style={{ background: "rgba(0,212,255,0.2)" }}>React Native Excellence</span>
+        </div>
+        <div className="glass" style={{ borderRadius: "24px", border: "1px solid rgba(0,212,255,0.5)", background: "rgba(8,12,18,0.8)", backdropFilter: "blur(24px)", boxShadow: "0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.2), 0 0 30px rgba(0,212,255,0.3)", transition: "transform 0.3s ease, box-shadow 0.3s ease", overflow: "hidden" }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-6px)"; e.currentTarget.style.boxShadow = "0 30px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,212,255,0.5), 0 0 45px rgba(0,212,255,0.5)"; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.2), 0 0 30px rgba(0,212,255,0.3)"; }}>
+          <div style={{ padding: "48px 40px", display: "flex", flexWrap: "wrap", gap: "40px", alignItems: "center" }}>
+            <div style={{ flex: 2, minWidth: "240px" }}>
+              <div style={{ fontSize: "13px", fontFamily: "var(--font-mono)", color: "var(--accent)", letterSpacing: "2px", marginBottom: "12px", display: "flex", alignItems: "center", gap: "12px" }}>
+                <span>✨ HIGHLIGHT PROJECT</span><span className="tag tag-purple">React Native + DSA</span>
+              </div>
+              <h3 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 800, letterSpacing: "-1px", marginBottom: "20px", background: "linear-gradient(135deg, #fff, var(--accent))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>RouteMaster AI</h3>
+              <p style={{ fontSize: "15px", lineHeight: "1.7", color: "var(--muted)", fontFamily: "var(--font-mono)", marginBottom: "28px" }}>A cross‑platform mobile app that uses Dijkstra's Algorithm, BFS, and DFS to discover optimal travel routes. Built with React Native & TypeScript, featuring real‑time route optimization, travel cost estimation, DSA visualisation, and a polished dark/light theme UI.</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "28px" }}>{["React Native","TypeScript","Dijkstra","BFS/DFS","Min Heap","Animated API"].map((tech) => (<span key={tech} className="tag tag-amber">{tech}</span>))}</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: "12px", marginBottom: "32px" }}>
+                {["Smart Route Planning","Travel Cost Estimation","Analytics Dashboards","DSA Visualisation Modules","Dark/Light Theme","Animated UI Components","Responsive Mobile Design"].map((feat) => (<div key={feat} style={{ display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--accent)" }}>▹</span><span style={{ fontSize: "13px", fontFamily: "var(--font-mono)" }}>{feat}</span></div>))}
+              </div>
+              <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                <a href="#" className="btn btn-primary" style={{ background: "var(--accent)" }}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h18M12 3v18" strokeWidth="2" /></svg>Live Demo (coming soon)</a>
+                <a href="https://github.com/swapnilk1806/Route-Master-AI-APP" className="btn btn-ghost" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>GitHub</a>
+              </div>
+            </div>
+            <div style={{ flex: 1, minWidth: "180px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <div style={{ width: "180px", height: "360px", background: "linear-gradient(145deg, #0a0f16, #05080c)", borderRadius: "32px", border: "1px solid rgba(0,212,255,0.3)", boxShadow: "0 20px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,212,255,0.1)", display: "flex", flexDirection: "column", alignItems: "center", padding: "20px 12px" }}>
+                <div style={{ width: "60px", height: "60px", background: "rgba(0,212,255,0.15)", borderRadius: "20px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "32px", marginBottom: "24px" }}>🚀</div>
+                <div style={{ width: "100%", height: "6px", background: "rgba(0,212,255,0.2)", borderRadius: "3px", marginBottom: "16px" }} />
+                <div style={{ width: "100%", height: "6px", background: "rgba(255,255,255,0.1)", borderRadius: "3px", marginBottom: "12px" }} />
+                <div style={{ width: "80%", height: "6px", background: "rgba(255,255,255,0.08)", borderRadius: "3px", marginBottom: "32px" }} />
+                <div style={{ fontSize: "12px", color: "var(--accent)", fontFamily: "var(--font-mono)" }}>RouteMaster AI</div>
+                <div style={{ marginTop: "20px", width: "40px", height: "40px", borderRadius: "30px", border: "2px solid var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "16px" }}>▶</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── Education ───────────────────────────────────── */}
+      {/* Academic Projects Section – new */}
+      <section id="academic">
+        <div className="section-label">Academia</div>
+        <h2 className="section-title">Academic & Side Projects</h2>
+        <p className="section-subtitle">A diverse collection of AI, full‑stack, and data‑driven applications developed during coursework and self‑learning.</p>
+        <div className="projects-grid">{ACADEMIC_PROJECTS.map((p) => (<ProjectCard key={p.num} project={p} type="academic" />))}</div>
+      </section>
+
+      {/* Education – unchanged */}
       <section id="education">
         <div className="section-label">Background</div>
         <h2 className="section-title">Education</h2>
         <p className="section-subtitle">Academic foundation in Computer Science and Applications.</p>
         <div className="edu-grid">
-          <div className="edu-card reveal">
-            <div
-              style={{
-                fontSize: 11,
-                fontFamily: "var(--font-mono)",
-                color: "var(--muted)",
-                marginBottom: 8,
-                letterSpacing: 2,
-                textTransform: "uppercase",
-              }}
-            >
-              Currently Pursuing
-            </div>
-            <div className="edu-degree">Master of Computer Application</div>
-            <div className="edu-school">Pimpri Chinchwad University</div>
-            <div className="edu-cgpa">
-              <span>⭐</span> CGPA: 8.25
-            </div>
-          </div>
-          <div className="edu-card reveal">
-            <div
-              style={{
-                fontSize: 11,
-                fontFamily: "var(--font-mono)",
-                color: "var(--muted)",
-                marginBottom: 8,
-                letterSpacing: 2,
-                textTransform: "uppercase",
-              }}
-            >
-              Completed
-            </div>
-            <div className="edu-degree">Bachelor of Computer Science</div>
-            <div className="edu-school">M.S.G College</div>
-            <div className="edu-cgpa">
-              <span>⭐</span> CGPA: 8.3
-            </div>
-          </div>
+          <div className="edu-card reveal"><div style={{ fontSize: 11, fontFamily: "var(--font-mono)", color: "var(--muted)", marginBottom: 8, letterSpacing: 2, textTransform: "uppercase" }}>Currently Pursuing</div><div className="edu-degree">Master of Computer Application</div><div className="edu-school">Pimpri Chinchwad University</div><div className="edu-cgpa"><span>⭐</span> CGPA: 8.25</div></div>
+          <div className="edu-card reveal"><div style={{ fontSize: 11, fontFamily: "var(--font-mono)", color: "var(--muted)", marginBottom: 8, letterSpacing: 2, textTransform: "uppercase" }}>Completed</div><div className="edu-degree">Bachelor of Computer Science</div><div className="edu-school">M.S.G College</div><div className="edu-cgpa"><span>⭐</span> CGPA: 8.3</div></div>
         </div>
-
-        {/* Certifications */}
         <div style={{ marginTop: 64 }}>
-          <div
-            style={{
-              fontSize: 13,
-              fontFamily: "var(--font-mono)",
-              color: "var(--accent)",
-              marginBottom: 24,
-              letterSpacing: 2,
-              textTransform: "uppercase",
-            }}
-          >
-            Certifications
-          </div>
-          <div className="cert-grid">
-            {CERTS.map((c) => (
-              <div className="cert-card reveal" key={c.name}>
-                <div className="cert-icon">{c.icon}</div>
-                <div className="cert-name">{c.name}</div>
-              </div>
-            ))}
-          </div>
+          <div style={{ fontSize: 13, fontFamily: "var(--font-mono)", color: "var(--accent)", marginBottom: 24, letterSpacing: 2, textTransform: "uppercase" }}>Certifications</div>
+          <div className="cert-grid">{CERTS.map((c) => (<div className="cert-card reveal" key={c.name}><div className="cert-icon">{c.icon}</div><div className="cert-name">{c.name}</div></div>))}</div>
         </div>
       </section>
 
-      {/* ── Contact ─────────────────────────────────────── */}
+      {/* Contact – unchanged */}
       <section id="contact">
         <div className="section-label">Get in Touch</div>
         <h2 className="section-title">Let's Connect</h2>
         <p className="section-subtitle">Open to full-time roles, freelance projects, and collaborations.</p>
-
         <div className="contact-grid">
           <div className="contact-links">
-            <a href="mailto:swapnilk.kadam01@gmail.com" className="contact-link">
-              <div className="contact-link-icon">📧</div>
-              <div>
-                <div className="contact-link-label">Email</div>
-                <div className="contact-link-value">swapnilk.kadam01@gmail.com</div>
-              </div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/swapnil-kadam/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-            >
-              <div className="contact-link-icon">💼</div>
-              <div>
-                <div className="contact-link-label">LinkedIn</div>
-                <div className="contact-link-value">linkedin.com/in/swapnil-kadam</div>
-              </div>
-            </a>
-            <a
-              href="https://github.com/swapnilk1806/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-            >
-              <div className="contact-link-icon">🐙</div>
-              <div>
-                <div className="contact-link-label">GitHub</div>
-                <div className="contact-link-value">github.com/swapnilk1806</div>
-              </div>
-            </a>
-            <a
-              href="https://leetcode.com/u/swapnilk1806/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-            >
-              <div className="contact-link-icon">🧩</div>
-              <div>
-                <div className="contact-link-label">LeetCode</div>
-                <div className="contact-link-value">leetcode.com/u/swapnilk1806</div>
-              </div>
-            </a>
+            <a href="mailto:swapnilk.kadam01@gmail.com" className="contact-link"><div className="contact-link-icon">📧</div><div><div className="contact-link-label">Email</div><div className="contact-link-value">swapnilk.kadam01@gmail.com</div></div></a>
+            <a href="https://www.linkedin.com/in/swapnil-kadam/" target="_blank" rel="noopener noreferrer" className="contact-link"><div className="contact-link-icon">💼</div><div><div className="contact-link-label">LinkedIn</div><div className="contact-link-value">linkedin.com/in/swapnil-kadam</div></div></a>
+            <a href="https://github.com/swapnilk1806/" target="_blank" rel="noopener noreferrer" className="contact-link"><div className="contact-link-icon">🐙</div><div><div className="contact-link-label">GitHub</div><div className="contact-link-value">github.com/swapnilk1806</div></div></a>
+            <a href="https://leetcode.com/u/swapnilk1806/" target="_blank" rel="noopener noreferrer" className="contact-link"><div className="contact-link-icon">🧩</div><div><div className="contact-link-label">LeetCode</div><div className="contact-link-value">leetcode.com/u/swapnilk1806</div></div></a>
           </div>
-
-          {/* Contact Form UI */}
           <div className="glass contact-form" style={{ padding: 32 }}>
-            <div
-              style={{
-                fontSize: 16,
-                fontWeight: 700,
-                marginBottom: 24,
-                letterSpacing: -0.3,
-              }}
-            >
-              Send a Message
-            </div>
-            <div className="form-group">
-              <label className="form-label">Your Name</label>
-              <input className="form-input" type="text" placeholder="John Doe" />
-            </div>
-            <div className="form-group">
-              <label className="form-label">Email Address</label>
-              <input className="form-input" type="email" placeholder="john@company.com" />
-            </div>
-            <div className="form-group">
-              <label className="form-label">Message</label>
-              <textarea
-                className="form-textarea"
-                placeholder="Tell me about the role or project..."
-              />
-            </div>
-            <button
-              className="btn btn-primary"
-              style={{ width: "100%", justifyContent: "center", padding: "14px" }}
-              onClick={(e) => e.preventDefault()}
-            >
-              Send Message
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
-              </svg>
-            </button>
+            <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 24, letterSpacing: -0.3 }}>Send a Message</div>
+            <div className="form-group"><label className="form-label">Your Name</label><input className="form-input" type="text" placeholder="John Doe" /></div>
+            <div className="form-group"><label className="form-label">Email Address</label><input className="form-input" type="email" placeholder="john@company.com" /></div>
+            <div className="form-group"><label className="form-label">Message</label><textarea className="form-textarea" placeholder="Tell me about the role or project..." /></div>
+            <button className="btn btn-primary" style={{ width: "100%", justifyContent: "center", padding: "14px" }} onClick={(e) => e.preventDefault()}>Send Message<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" /></svg></button>
           </div>
         </div>
       </section>
 
-      {/* ── Footer ──────────────────────────────────────── */}
+      {/* Footer – updated tags */}
       <footer>
-        <div
-          style={{
-            fontSize: 22,
-            fontWeight: 800,
-            background: "linear-gradient(135deg, var(--accent), var(--accent2))",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            marginBottom: 16,
-            letterSpacing: -0.5,
-          }}
-        >
-          Swapnil Kadam
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 8,
-            flexWrap: "wrap",
-            marginBottom: 24,
-          }}
-        >
-          {["Java", "Spring Boot", "MERN", "AWS", "Microservices", "Kafka"].map((t) => (
-            <span className="tag" key={t}>{t}</span>
-          ))}
-        </div>
-        <p className="footer-text">
-          © {new Date().getFullYear()} Swapnil Kadam. Built with React + TypeScript.
-        </p>
-        <p className="footer-text" style={{ marginTop: 8 }}>
-          Open to Software Engineer roles &amp; collaborations worldwide.
-        </p>
+        <div style={{ fontSize: 22, fontWeight: 800, background: "linear-gradient(135deg, var(--accent), var(--accent2))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", marginBottom: 16, letterSpacing: -0.5 }}>Swapnil Kadam</div>
+        <div style={{ display: "flex", justifyContent: "center", gap: 8, flexWrap: "wrap", marginBottom: 24 }}>{["Java","Spring Boot","MERN","AWS","Microservices","Kafka","Python","LLM","React Native"].map((t) => (<span className="tag" key={t}>{t}</span>))}</div>
+        <p className="footer-text">© {new Date().getFullYear()} Swapnil Kadam. Built with React + TypeScript.</p>
+        <p className="footer-text" style={{ marginTop: 8 }}>Open to Software Engineer roles &amp; collaborations worldwide.</p>
       </footer>
     </>
   );
